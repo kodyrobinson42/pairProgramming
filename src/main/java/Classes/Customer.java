@@ -1,4 +1,4 @@
-import EmployeePackage.Employee;
+package Classes;
 
 public class Customer {
 
@@ -6,7 +6,7 @@ public class Customer {
     String customerName;
     Employee employee;
 
-    public void customer(int id, String name){
+    public Customer(int id, String name){
         this.customerID = id;
         this.customerName = name;
     }
@@ -34,6 +34,8 @@ public class Customer {
 
 
     public String toString(){
-        return "Hi";
+        String result;
+        result = "Customer: "+this.customerName+", Employee: "+this.employee.getEmployeeName();
+        return result;
     }
 }
