@@ -10,7 +10,9 @@ public abstract class Employee {
     ArrayList<Customer> customers;
     double salary;
 
-    public Employee(){}
+    public Employee(){
+        this.customers = new ArrayList<Customer>();
+    }
 
     String getEmployeeName(){
         return employeeName;
@@ -29,7 +31,7 @@ public abstract class Employee {
     }
 
     void setManager(SalesManager newManager){
-        this.manager = newManager;
+        this.manager = newManager; //this line isn't working
         newManager.addEmployee(this);
     }
 

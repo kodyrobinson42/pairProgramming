@@ -23,6 +23,17 @@ public class SalesAssociate extends Employee {
 
     @Override
     public String toString(){
-       return "Hi";
+       String result;
+       result = "Sales Associate: "+this.employeeName
+               +".  Manager: ";
+       String manager1;
+        if(this.manager!=null) {
+            manager1 = this.manager.getEmployeeName();
+        }else{
+            manager1 = "null";
+        }
+        result += manager1+". Employees: null. Total sales: "
+               +String.valueOf(this.totalSales());
+       return result;
     }
 }
