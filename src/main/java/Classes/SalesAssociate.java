@@ -18,7 +18,7 @@ public class SalesAssociate extends Employee {
    }*///dont think we need this since it isn't different from the employee one
 
     public double totalSales(){
-        return this.customers.size()*100;
+        return this.getCustomers().size()*100;
     }
 
     @Override
@@ -26,8 +26,8 @@ public class SalesAssociate extends Employee {
        String result;
        result = "Sales Associate: "+this.employeeName
                +".  Manager: ";
-       String manager1;
-        if(this.manager!=null) {
+       String manager1 = null;
+        if(this.manager != null) {
             manager1 = this.manager.getEmployeeName();
         }else{
             manager1 = "null";

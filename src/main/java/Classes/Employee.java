@@ -6,7 +6,7 @@ public abstract class Employee {
 
     int employeeID;
     String employeeName;
-    protected SalesManager manager;
+    SalesManager manager;
     ArrayList<Customer> customers;
     double salary;
 

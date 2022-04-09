@@ -21,19 +21,26 @@ public class SalesManager extends Employee {
     protected ArrayList<Employee> employees;
 
     public double totalSales(){
-        double total = 0;
-        for(Employee employee:employees){
-            if(employee.getClass().toString() == "Classes.SalesAssociate"){
-                total+= 500;
+        double totalSales = (this.getCustomers().size() * 200);
+        for (int i = 0; i < employees.size(); i++){
+            if (employees.get(i) instanceof SalesAssociate){
+                totalSales += 500;
             }
         }
-        total+=200* this.customers.size();
-
-        return total;
+        return totalSales;
+//        double total = 0;
+//        for(Employee employee:employees){
+//            if(employee.getClass().toString() == "Classes.SalesAssociate"){
+//                total+= 500;
+//            }
+//        }
+//        total+=200* this.customers.size();
+//
+//        return total;
     }
 
     public void addEmployee(Employee newEmployee){
-        employees.add(newEmployee);
+        this.employees.add(newEmployee);
     }
 
     public String toString(){
