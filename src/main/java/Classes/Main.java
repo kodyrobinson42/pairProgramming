@@ -1,7 +1,11 @@
 package Classes;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
+        ArrayList<Object> people = new ArrayList<Object>();
+
         SalesManager Serenity = new SalesManager(101, "Serenity");
         SalesManager Jose = new SalesManager(37, "Jose");
         SalesManager Amy = new SalesManager(112, "Amy");
