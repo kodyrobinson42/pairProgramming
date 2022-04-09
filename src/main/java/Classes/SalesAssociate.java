@@ -2,7 +2,7 @@ package Classes;
 
 public class SalesAssociate extends Employee {
    protected double salary = 35000;
-   protected SalesManager manager;
+   //protected SalesManager manager;
 
    public SalesAssociate(int ID, String name){
        this.employeeID = ID;

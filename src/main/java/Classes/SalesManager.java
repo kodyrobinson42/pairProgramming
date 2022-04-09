@@ -12,7 +12,7 @@ public class SalesManager extends Employee {
 
     protected double salary = 75000;
 
-    protected SalesManager manager = null;
+    //protected SalesManager manager = null;
 
     ArrayList<Employee> getEmployees() {
         return employees;
@@ -27,16 +27,8 @@ public class SalesManager extends Employee {
                 totalSales += 500;
             }
         }
+
         return totalSales;
-//        double total = 0;
-//        for(Employee employee:employees){
-//            if(employee.getClass().toString() == "Classes.SalesAssociate"){
-//                total+= 500;
-//            }
-//        }
-//        total+=200* this.customers.size();
-//
-//        return total;
     }
 
     public void addEmployee(Employee newEmployee){

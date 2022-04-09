@@ -51,5 +51,6 @@ public class Main {
                 +Damien.toString() +"\n"
                 +Oliver.toString() +"\n"
                 );
+        System.out.println("try"+David.getClass().toString());
     }
 }
